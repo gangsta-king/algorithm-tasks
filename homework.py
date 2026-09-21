@@ -82,21 +82,33 @@
 #    print('Invalid Time')
 
 # 15.
-def find_quadrant(x, y):
-   if x > 0 and y > 0:
-       return "Quadrant 1"
-   elif x < 0 and y > 0:
-       return "Quadrant 2"
-   elif x < 0 and y < 0:
-       return "Quadrant 3"
-   elif x > 0 and y < 0:
-       return "Quadrant 4"
-   elif x == 0 and y != 0:
-       return "Y-axis"
-   elif y == 0 and x != 0:
-       return "X-axis"
-   else:
-       return "Origin"
-print(find_quadrant(int(input()), int(input())))
+# def find_quadrant(x, y):
+#    if x > 0 and y > 0:
+#        return "Quadrant 1"
+#    elif x < 0 and y > 0:
+#        return "Quadrant 2"
+#    elif x < 0 and y < 0:
+#        return "Quadrant 3"
+#    elif x > 0 and y < 0:
+#        return "Quadrant 4"
+#    elif x == 0 and y != 0:
+#        return "Y-axis"
+#    elif y == 0 and x != 0:
+#        return "X-axis"
+#    else:
+#        return "Origin"
+# print(find_quadrant(int(input()), int(input())))
 
 # 16.
+# n=float(input())
+# s=n
+# c=0
+# if s>100:
+#     c+=100*0.5
+#     s-=100
+# if s>100:
+#     c+=100*0.75
+#     s-=100
+# if n>200:
+#     c+=s*1.2
+# print(f'Total Cost = {c:.1f}')
