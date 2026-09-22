@@ -1,12 +1,16 @@
 # Basic Programming & Precision Arithmetic 
 
 # 1.
-#from math import *
-#a,b = int(input()), int(input())
-#c = sqrt(a**2 + b**2)
-#angle1 = degrees(atan(b/a))
-#angle2 = degrees(atan(a/b))
-#print(f'Hypotenuse = {c:.1f}, Angle1 = {angle1:.2f} deg, Angle2 = {angle2:.2f} deg')
+# from math import *
+# a,b = int(input()), int(input())
+# c = sqrt(a**2 + b**2)
+# angle1 = degrees(atan(b/a))
+# angle2 = degrees(atan(a/b))
+
+# angle1 = (b/a) * 180 / pi
+# angle2 = (a/b) * 180 / pi
+
+# print(f'Hypotenuse = {c:.1f}, Angle1 = {angle1:.2f} deg, Angle2 = {angle2:.2f} deg')
 
 # 2. A = P * (1 + R/100*n)**(n*t)
 #p, r, t, n = int(input('P: ')), int(input('R: ')), int(input('t: ')), int(input('n: '))
@@ -41,7 +45,7 @@
 #n=int(input())
 #print(f'{n//1440} day(s), {(n%1440)//60} hour(s), {n%30} minute(s)')
 
-# 9.
+# 9. I need help
 #a,b=int(input()),int(input())
 #print(f'AND = {a & b}, OR = {a | b}, XOR = {a ^ b}, Shift = {a << b}')
 
@@ -64,7 +68,7 @@
 #else:
 #    print('Scalene')
 
-# 13.
+# 13. I need help
 #n=int(input())
 #tax=0.0
 #if n > 30000:
@@ -111,4 +115,151 @@
 #     s-=100
 # if n>200:
 #     c+=s*1.2
-# print(f'Total Cost = {c:.1f}')
+# print(f'Total Bill = ${c:.1f}')
+
+# 17.
+# n=input()
+# sum=0
+# for i in n:
+#     sum+=int(i)**4
+
+# if sum==int(n):
+#     print('Armstrong Number')
+# else:
+#     print('Not an Armstrong Number')
+
+# 18.
+# n1,n2=[int(input()),int(input())],[int(input()),int(input())]
+# s1,s2=[i for i in range(n1[0],n1[1]+1)],[i for i in range(n2[0],n2[1]+1)]
+# c=0
+# for i in range(len(s1)):
+#     for j in range(len(s2)):
+#         if s1[i]==s2[j]:
+#             c+=1
+# print('Overlapping' if c>0 else 'Non-Overlapping')
+
+# 19. I need help
+# from datetime import datetime
+# year, month, day = int(input()), int(input()), int(input())
+# if datetime(year, month, day):
+#     print("Valid Date")
+# else:
+#     print("Invalid Date")
+
+# 20.
+# p1,p2=int(input()),int(input())
+# if (p1>p2 and p1!=0 and p2!=0) or (p1>p2 and p1==1 and p2==0) or (p1==0 and p2==2):
+#     print('Player 1 Wins')
+# elif (p2>p1 and p1!=0 and p2!=0) or (p2>p1 and p1==0 and p2==1) or (p1==2 and p2==0):
+#     print('Player 2 Wins')
+# else:
+#     print('No Winner')
+
+# 21. I used the gemini to solve this problem, but I will provide a solution here as well.
+
+# n = input().split()
+# nums = [float(n[i]) for i in range(0, len(n), 2)]
+# ops = n[1::2]
+# i = 0
+# while i < len(ops):
+#     if ops[i] in ('*', '/'):
+#         if ops[i] == '*':
+#             nums[i] = nums[i] * nums[i + 1]
+#         else:
+#             nums[i] = nums[i] / nums[i + 1]
+#         del nums[i + 1]
+#         del ops[i]
+#     else:
+#         i += 1
+# res = nums[0]
+# for i in range(len(ops)):
+#     if ops[i] == '+':
+#         res += nums[i + 1]
+#     elif ops[i] == '-':
+#         res -= nums[i + 1]
+# print(f"Result = {int(res) if res.is_integer() else res}")
+
+
+# For Loop
+
+# 22.
+# print(*[i for i in range(1, int(input()) + 1) if i % 3 == 0 and i % 5 == 0])
+
+# 23.
+# c=1
+# for i in range(1, int(input()) + 1):
+#     c*=i
+# print(c)
+
+# import math
+# print(math.factorial(int(input( ))))
+
+# 24.
+# for i in range(1, int(input()) + 1):
+#     for j in range(1, i + 1):
+#         print(j, end=' ')
+#     print()
+
+# 25.
+# s=[]
+# for i in range(1, int(input()) + 1):
+#     s.append(i**2)
+# print(f'Sum = {sum(s)}({"+".join([str(i) for i in s])})')
+
+# 26. I need help
+# n=int(input())
+# c=0
+# l=0
+# for i in range(n):
+#     c+=1
+#     print(i+l, end=' ')
+#     l=i
+#     if c==len([i for i in range(1, n + 1)]):
+#         break
+# figonacci = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711]
+# print(*figonacci[:n])
+
+# 27.
+# print(int(input())**int(input()))
+
+# 28.
+# n=int(input())
+# print(*[f'{i}x1={i*1} {i}x2={i*2} {i}x3={i*3} {i}x4={i*4} {i}x5={i*5} {i}x6={i*6} {i}x7={i*7} {i}x8={i*8} {i}x9={i*9} {i}x10={i*10}' for i in range(1, n + 1)], sep='\n')
+
+# 29.
+# n=int(input())
+# c=0
+# l=[]
+# for i in range(1, n + 1):
+#     for j in range(1, i+1):
+#         if i%j==0:
+#             c+=1
+#     if c==2:
+#         l.append(i)
+#     c=0
+# print(f'Prime Count = {len(l)} ({", ".join([str(i) for i in l])})')
+
+# 30.
+# for i in range(int(input()), 0, -1):
+#     print((i*2-1)*'*')
+
+# 31.
+# c=0
+# for i in range(1, int(input()) + 1):
+#     c+=1/i
+# print(f'Sum = {c:.4f}')
+
+
+# While Loop
+
+# 32.
+# print(len(input()))
+
+# 33.
+# print(sum([int(i) for i in input()]))
+
+# 34
+# n=[int(i) for i in input()]
+# n.sort(reverse=True)
+# print(*n)
+
