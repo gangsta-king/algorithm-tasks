@@ -258,8 +258,37 @@
 # 33.
 # print(sum([int(i) for i in input()]))
 
-# 34
+# 34.
 # n=[int(i) for i in input()]
 # n.sort(reverse=True)
 # print(*n)
 
+# 35. 
+# n = int(input())
+# original = n
+# reversed_num = 0
+# while n > 0:
+#     digit = n % 10
+#     reversed_num = (reversed_num * 10) + digit
+#     n = n // 10
+# if original == reversed_num:
+#     print('Palindrome')
+# else:
+#     print('No palindrome')
+
+# 36.
+# a,b=map(int,input().split())
+# c=0
+# n=0
+# for i in range(1,100):
+#     if a%i==0 and b%i==0:
+#         c=i
+# print(c)
+
+# a, b = map(int, input().split())
+# while b != 0:
+#     a, b = b, a % b
+
+# print(f"GCD = {a}")
+
+# 37.
