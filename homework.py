@@ -292,3 +292,80 @@
 # print(f"GCD = {a}")
 
 # 37.
+# n=int(input())
+# print(*{f'{i}x1={i*1} {i}x2={i*2} {i}x3={i*3} {i}x4={i*4} {i}x5={i*5} {i}x6={i*6} {i}x7={i*7} {i}x8={i*8} {i}x9={i*9} {i}x10={i*10}' for i in range(1,n+1)},sep='\n')
+
+# 38.
+# n=int(input())
+# s=[]
+# for i in range(1,n+1):
+#     c=0
+#     for j in range(1,n+1):
+#         if i%j==0:
+#             c+=1
+#     if c==2:
+#         s.append(i)
+# print(f'Prime Count = {len(s)}({','.join([str(i) for i in s])})')
+
+# 39.
+# n=int(input())
+# for i in range(n,0,-1):
+#     print((i*2-1)*'*')
+
+# 40.
+# c=0
+# for i in range(1,int(input())+1):
+#     c+=(1/i)
+# print(f'Sum = {c:.4f}')
+
+
+# While Loop
+
+# 41.
+# n=int(input())
+# c=0
+# while n!=0:
+#     c+=1
+#     n//=10
+# print(f'Digits = {c}')
+
+# 42.
+# n=int(input())
+# c=0
+# while n!=0:
+#     c+=n%10
+#     n//=10
+# print(f'Sum = {c}')
+
+# 43.
+# n=int(input())
+# print('Reversed = ',end='')
+# while n!=0:
+#     print(n%10,end='')
+#     n//=10
+
+# 44.
+# n=int(input())
+# orig=n
+# reversednum = 0
+# while n!=0:
+#     reversednum = (reversednum * 10) + n%10
+#     n//=10
+# if reversednum == orig:
+#     print('Palindrome')
+# else:
+#     print('No palindrome')
+
+# 45.
+# a,b=int(input()),int(input())
+# c=0
+# gc=0
+# while c<=min(a,b):
+#     c+=1
+#     if a%c==0 and b%c==0:
+#         gc=c
+# print(f'GCD = {gc}')
+
+# 46.
+n=int(input())
+print(ord(str(n)))
