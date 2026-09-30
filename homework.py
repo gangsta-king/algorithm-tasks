@@ -368,4 +368,4 @@
 
 # 46.
 n=int(input())
-print(ord(str(n)))
+print(ord(str(n)))  
