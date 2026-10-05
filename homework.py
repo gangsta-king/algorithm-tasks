@@ -367,5 +367,110 @@
 # print(f'GCD = {gc}')
 
 # 46.
-n=int(input())
-print(ord(str(n)))  
+# n=int(input())
+# s=''
+# while n>=1:
+#     s+=str(n%2)
+#     n//=2
+# print(f'Binary = {int(s[::-1])}')
+
+# 47.
+# print(f'Valid input received: {','.join([str(i) for i in list(map(int,input().split())) if i>1 and i<10])}')
+
+# while True:
+#     num = int(input())
+#     if 1 <= num <= 10:
+#         print(f"Valid input received: {num}")
+#         break
+
+# 48.
+# n=int(input())
+# t=[n]
+# while n>=1:
+#     t.append(n//2 if n%2==0 else n/2)
+#     if n%2==0:
+#         n//=2
+#     else:
+#         n/=2
+# print(f'Divisions = {len(t)-1} ({", ".join([str(i) for i in t])})')
+
+# 49.
+# n=int(input())
+# c=0
+# while n!=0:
+#     c+=n
+#     n=int(input())
+# print('Total Sum = ',c)
+
+# 50.
+# n=int(input())
+# l=n
+# c=[]
+# while n!=1:
+#     if n%2==0:
+#         n//=2
+#         c.append(n)
+#     else:
+#         n=n*3+1
+#         c.append(n)
+# print(f'Sequence = {l} {' '.join([str(i) for i in c])}')
+
+
+# Loops
+
+# 51.
+# a,b=int(input()),int(input())
+# co=0
+# for i in range(a,b+1):
+#     c=0
+#     for j in range(1,i+1):
+#         if i%j==0:
+#             c+=1
+#     if c==2:
+#         co+=1
+# print(f'Prime Count = {co}')
+
+# 52.
+# n=int(input())
+# s=''
+# while n>=1:
+#     s+=str(n%2)
+#     n//=2
+# print(f'Binary = {int(s[::-1])}')
+
+# 53.
+# n=int(input())
+# print('*'*n, *['*' + ' '*(n-2) + '*' for i in range(n-2)], '*'*n, sep='\n')
+
+# 54.
+# a,b,c=map(int,input().split())
+# hcd=0
+# for i in range(1,max(a,b,c)+1):
+#     if a%i==0 and b%i==0 and c%i==0:
+#         hcd=i
+# print(f'HCD = {hcd}')
+
+# 55. # I think this is amazing solution
+# n=int(input())
+# c=[]
+# for i in range(1,n+1):
+#     for j in range(1,n+1):
+#         for k in range(1,n+1):
+#             if i**2 + j**2 == k**2 and i<=j<k:
+#                 c.append((i,j,k))
+# print(f'Pythagorean Triples = {", ".join([f"({x},{y},{z})" for x,y,z in c])}')
+
+# 56.
+# n=int(input())
+# print(f'Sum = {(sum([1/i for i in range(1,n+1) if i%2!=0])+sum([1/(-i) for i in range(1,n+1) if i%2==0])):.4f}')
+
+# 57.
+# print(*[(i*2-1)*'*' for i in range(int(input()),0,-1)], sep='\n')
+
+# 58.
+# print(*[i for i in range(100,1000) if sum([int(j)**len(str(i)) for j in str(i)]) == i])
+
+# 59.
+# print('Digits = ',len(input()))
+
+# 60.
